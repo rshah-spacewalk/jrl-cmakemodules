@@ -1,0 +1,709 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      The system is: Linux - 6.17.0-8-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/clang++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/3.31.6/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-bzM1kZ"
+      binary: "/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-bzM1kZ"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      VCPKG_INSTALLED_DIR: "/home/ravi/spacewalk/kepler/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-linux"
+      Z_VCPKG_ROOT_DIR: "/home/ravi/spacewalk/kepler/vcpkg"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-bzM1kZ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0aca1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0aca1.dir/build.make CMakeFiles/cmTC_0aca1.dir/build
+        gmake[1]: Entering directory '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-bzM1kZ'
+        Building CXX object CMakeFiles/cmTC_0aca1.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/clang++   -v -MD -MT CMakeFiles/cmTC_0aca1.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_0aca1.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_0aca1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Ubuntu clang version 20.1.8 (0ubuntu4)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm-20/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/15
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/15
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-20/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-bzM1kZ -v -fcoverage-compilation-dir=/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-bzM1kZ -resource-dir /usr/lib/llvm-20/lib/clang/20 -dependency-file CMakeFiles/cmTC_0aca1.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_0aca1.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/x86_64-linux-gnu/c++/15 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/backward -internal-isystem /usr/lib/llvm-20/lib/clang/20/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/15/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_0aca1.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 20.1.8 based upon LLVM 20.1.8 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15
+         /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/x86_64-linux-gnu/c++/15
+         /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/backward
+         /usr/lib/llvm-20/lib/clang/20/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking CXX executable cmTC_0aca1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0aca1.dir/link.txt --verbose=1
+        Ubuntu clang version 20.1.8 (0ubuntu4)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm-20/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/15
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/15
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_0aca1 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_0aca1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.45
+        /usr/bin/clang++  -v -Wl,-v CMakeFiles/cmTC_0aca1.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0aca1
+        gmake[1]: Leaving directory '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-bzM1kZ'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/x86_64-linux-gnu/c++/15]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/backward]
+          add: [/usr/lib/llvm-20/lib/clang/20/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15] ==> [/usr/include/c++/15]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/x86_64-linux-gnu/c++/15] ==> [/usr/include/x86_64-linux-gnu/c++/15]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/backward] ==> [/usr/include/c++/15/backward]
+        collapse include dir [/usr/lib/llvm-20/lib/clang/20/include] ==> [/usr/lib/llvm-20/lib/clang/20/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/15;/usr/include/x86_64-linux-gnu/c++/15;/usr/include/c++/15/backward;/usr/lib/llvm-20/lib/clang/20/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-bzM1kZ']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0aca1/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_0aca1.dir/build.make CMakeFiles/cmTC_0aca1.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-bzM1kZ']
+        ignore line: [Building CXX object CMakeFiles/cmTC_0aca1.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/clang++   -v -MD -MT CMakeFiles/cmTC_0aca1.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_0aca1.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_0aca1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Ubuntu clang version 20.1.8 (0ubuntu4)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm-20/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/15]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/15]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-20/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-bzM1kZ -v -fcoverage-compilation-dir=/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-bzM1kZ -resource-dir /usr/lib/llvm-20/lib/clang/20 -dependency-file CMakeFiles/cmTC_0aca1.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_0aca1.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/x86_64-linux-gnu/c++/15 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/backward -internal-isystem /usr/lib/llvm-20/lib/clang/20/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/15/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_0aca1.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 20.1.8 based upon LLVM 20.1.8 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/x86_64-linux-gnu/c++/15]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/backward]
+        ignore line: [ /usr/lib/llvm-20/lib/clang/20/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_0aca1]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0aca1.dir/link.txt --verbose=1]
+        ignore line: [Ubuntu clang version 20.1.8 (0ubuntu4)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm-20/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/15]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/15]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_0aca1 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_0aca1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_0aca1] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/15] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/15]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_0aca1.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/15] ==> [/usr/lib/gcc/x86_64-linux-gnu/15]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/15;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.45
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "compiler.cmake:159 (check_cxx_compiler_flag)"
+      - "compiler.cmake:62 (CXX_FLAGS_BY_COMPILER_FRONTEND)"
+      - "post-project.cmake:90 (_SETUP_PROJECT_WARNINGS)"
+      - "CMakeLists.txt:17 (project)"
+    checks:
+      - "Performing Test res_-pedantic"
+    directories:
+      source: "/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-NksOV3"
+      binary: "/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-NksOV3"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      VCPKG_INSTALLED_DIR: "/home/ravi/spacewalk/kepler/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-linux"
+      Z_VCPKG_ROOT_DIR: "/home/ravi/spacewalk/kepler/vcpkg"
+    buildResult:
+      variable: "res_-pedantic"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-NksOV3'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_92bfb/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_92bfb.dir/build.make CMakeFiles/cmTC_92bfb.dir/build
+        gmake[1]: Entering directory '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-NksOV3'
+        Building CXX object CMakeFiles/cmTC_92bfb.dir/src.cxx.o
+        /usr/bin/clang++   -Dres_-pedantic -pedantic -MD -MT CMakeFiles/cmTC_92bfb.dir/src.cxx.o -MF CMakeFiles/cmTC_92bfb.dir/src.cxx.o.d -o CMakeFiles/cmTC_92bfb.dir/src.cxx.o -c /home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-NksOV3/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:13: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define res_-pedantic 1
+              |             ^
+        1 warning generated.
+        Linking CXX executable cmTC_92bfb
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92bfb.dir/link.txt --verbose=1
+        /usr/bin/clang++ CMakeFiles/cmTC_92bfb.dir/src.cxx.o -o cmTC_92bfb
+        gmake[1]: Leaving directory '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-NksOV3'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "compiler.cmake:159 (check_cxx_compiler_flag)"
+      - "compiler.cmake:62 (CXX_FLAGS_BY_COMPILER_FRONTEND)"
+      - "post-project.cmake:90 (_SETUP_PROJECT_WARNINGS)"
+      - "CMakeLists.txt:17 (project)"
+    checks:
+      - "Performing Test res_-Wno-long-long"
+    directories:
+      source: "/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-dF6Vbu"
+      binary: "/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-dF6Vbu"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      VCPKG_INSTALLED_DIR: "/home/ravi/spacewalk/kepler/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-linux"
+      Z_VCPKG_ROOT_DIR: "/home/ravi/spacewalk/kepler/vcpkg"
+    buildResult:
+      variable: "res_-Wno-long-long"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-dF6Vbu'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_91a64/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_91a64.dir/build.make CMakeFiles/cmTC_91a64.dir/build
+        gmake[1]: Entering directory '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-dF6Vbu'
+        Building CXX object CMakeFiles/cmTC_91a64.dir/src.cxx.o
+        /usr/bin/clang++   -Dres_-Wno-long-long -Wno-long-long -MD -MT CMakeFiles/cmTC_91a64.dir/src.cxx.o -MF CMakeFiles/cmTC_91a64.dir/src.cxx.o.d -o CMakeFiles/cmTC_91a64.dir/src.cxx.o -c /home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-dF6Vbu/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:13: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define res_-Wno-long-long 1
+              |             ^
+        1 warning generated.
+        Linking CXX executable cmTC_91a64
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91a64.dir/link.txt --verbose=1
+        /usr/bin/clang++ CMakeFiles/cmTC_91a64.dir/src.cxx.o -o cmTC_91a64
+        gmake[1]: Leaving directory '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-dF6Vbu'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "compiler.cmake:159 (check_cxx_compiler_flag)"
+      - "compiler.cmake:62 (CXX_FLAGS_BY_COMPILER_FRONTEND)"
+      - "post-project.cmake:90 (_SETUP_PROJECT_WARNINGS)"
+      - "CMakeLists.txt:17 (project)"
+    checks:
+      - "Performing Test res_-Wall"
+    directories:
+      source: "/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-mYQvE9"
+      binary: "/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-mYQvE9"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      VCPKG_INSTALLED_DIR: "/home/ravi/spacewalk/kepler/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-linux"
+      Z_VCPKG_ROOT_DIR: "/home/ravi/spacewalk/kepler/vcpkg"
+    buildResult:
+      variable: "res_-Wall"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-mYQvE9'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d9420/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d9420.dir/build.make CMakeFiles/cmTC_d9420.dir/build
+        gmake[1]: Entering directory '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-mYQvE9'
+        Building CXX object CMakeFiles/cmTC_d9420.dir/src.cxx.o
+        /usr/bin/clang++   -Dres_-Wall -Wall -MD -MT CMakeFiles/cmTC_d9420.dir/src.cxx.o -MF CMakeFiles/cmTC_d9420.dir/src.cxx.o.d -o CMakeFiles/cmTC_d9420.dir/src.cxx.o -c /home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-mYQvE9/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:13: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define res_-Wall 1
+              |             ^
+        1 warning generated.
+        Linking CXX executable cmTC_d9420
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9420.dir/link.txt --verbose=1
+        /usr/bin/clang++ CMakeFiles/cmTC_d9420.dir/src.cxx.o -o cmTC_d9420
+        gmake[1]: Leaving directory '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-mYQvE9'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "compiler.cmake:159 (check_cxx_compiler_flag)"
+      - "compiler.cmake:62 (CXX_FLAGS_BY_COMPILER_FRONTEND)"
+      - "post-project.cmake:90 (_SETUP_PROJECT_WARNINGS)"
+      - "CMakeLists.txt:17 (project)"
+    checks:
+      - "Performing Test res_-Wextra"
+    directories:
+      source: "/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-fBBTz6"
+      binary: "/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-fBBTz6"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      VCPKG_INSTALLED_DIR: "/home/ravi/spacewalk/kepler/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-linux"
+      Z_VCPKG_ROOT_DIR: "/home/ravi/spacewalk/kepler/vcpkg"
+    buildResult:
+      variable: "res_-Wextra"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-fBBTz6'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3d273/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3d273.dir/build.make CMakeFiles/cmTC_3d273.dir/build
+        gmake[1]: Entering directory '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-fBBTz6'
+        Building CXX object CMakeFiles/cmTC_3d273.dir/src.cxx.o
+        /usr/bin/clang++   -Dres_-Wextra -Wextra -MD -MT CMakeFiles/cmTC_3d273.dir/src.cxx.o -MF CMakeFiles/cmTC_3d273.dir/src.cxx.o.d -o CMakeFiles/cmTC_3d273.dir/src.cxx.o -c /home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-fBBTz6/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:13: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define res_-Wextra 1
+              |             ^
+        1 warning generated.
+        Linking CXX executable cmTC_3d273
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d273.dir/link.txt --verbose=1
+        /usr/bin/clang++ CMakeFiles/cmTC_3d273.dir/src.cxx.o -o cmTC_3d273
+        gmake[1]: Leaving directory '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-fBBTz6'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "compiler.cmake:159 (check_cxx_compiler_flag)"
+      - "compiler.cmake:62 (CXX_FLAGS_BY_COMPILER_FRONTEND)"
+      - "post-project.cmake:90 (_SETUP_PROJECT_WARNINGS)"
+      - "CMakeLists.txt:17 (project)"
+    checks:
+      - "Performing Test res_-Wcast-align"
+    directories:
+      source: "/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-SutsDg"
+      binary: "/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-SutsDg"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      VCPKG_INSTALLED_DIR: "/home/ravi/spacewalk/kepler/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-linux"
+      Z_VCPKG_ROOT_DIR: "/home/ravi/spacewalk/kepler/vcpkg"
+    buildResult:
+      variable: "res_-Wcast-align"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-SutsDg'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b97c8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b97c8.dir/build.make CMakeFiles/cmTC_b97c8.dir/build
+        gmake[1]: Entering directory '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-SutsDg'
+        Building CXX object CMakeFiles/cmTC_b97c8.dir/src.cxx.o
+        /usr/bin/clang++   -Dres_-Wcast-align -Wcast-align -MD -MT CMakeFiles/cmTC_b97c8.dir/src.cxx.o -MF CMakeFiles/cmTC_b97c8.dir/src.cxx.o.d -o CMakeFiles/cmTC_b97c8.dir/src.cxx.o -c /home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-SutsDg/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:13: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define res_-Wcast-align 1
+              |             ^
+        1 warning generated.
+        Linking CXX executable cmTC_b97c8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b97c8.dir/link.txt --verbose=1
+        /usr/bin/clang++ CMakeFiles/cmTC_b97c8.dir/src.cxx.o -o cmTC_b97c8
+        gmake[1]: Leaving directory '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-SutsDg'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "compiler.cmake:159 (check_cxx_compiler_flag)"
+      - "compiler.cmake:62 (CXX_FLAGS_BY_COMPILER_FRONTEND)"
+      - "post-project.cmake:90 (_SETUP_PROJECT_WARNINGS)"
+      - "CMakeLists.txt:17 (project)"
+    checks:
+      - "Performing Test res_-Wcast-qual"
+    directories:
+      source: "/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-JtN5Oc"
+      binary: "/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-JtN5Oc"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      VCPKG_INSTALLED_DIR: "/home/ravi/spacewalk/kepler/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-linux"
+      Z_VCPKG_ROOT_DIR: "/home/ravi/spacewalk/kepler/vcpkg"
+    buildResult:
+      variable: "res_-Wcast-qual"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-JtN5Oc'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f21a0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f21a0.dir/build.make CMakeFiles/cmTC_f21a0.dir/build
+        gmake[1]: Entering directory '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-JtN5Oc'
+        Building CXX object CMakeFiles/cmTC_f21a0.dir/src.cxx.o
+        /usr/bin/clang++   -Dres_-Wcast-qual -Wcast-qual -MD -MT CMakeFiles/cmTC_f21a0.dir/src.cxx.o -MF CMakeFiles/cmTC_f21a0.dir/src.cxx.o.d -o CMakeFiles/cmTC_f21a0.dir/src.cxx.o -c /home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-JtN5Oc/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:13: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define res_-Wcast-qual 1
+              |             ^
+        1 warning generated.
+        Linking CXX executable cmTC_f21a0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f21a0.dir/link.txt --verbose=1
+        /usr/bin/clang++ CMakeFiles/cmTC_f21a0.dir/src.cxx.o -o cmTC_f21a0
+        gmake[1]: Leaving directory '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-JtN5Oc'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "compiler.cmake:159 (check_cxx_compiler_flag)"
+      - "compiler.cmake:62 (CXX_FLAGS_BY_COMPILER_FRONTEND)"
+      - "post-project.cmake:90 (_SETUP_PROJECT_WARNINGS)"
+      - "CMakeLists.txt:17 (project)"
+    checks:
+      - "Performing Test res_-Wformat"
+    directories:
+      source: "/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-pMIeB7"
+      binary: "/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-pMIeB7"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      VCPKG_INSTALLED_DIR: "/home/ravi/spacewalk/kepler/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-linux"
+      Z_VCPKG_ROOT_DIR: "/home/ravi/spacewalk/kepler/vcpkg"
+    buildResult:
+      variable: "res_-Wformat"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-pMIeB7'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_22e84/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_22e84.dir/build.make CMakeFiles/cmTC_22e84.dir/build
+        gmake[1]: Entering directory '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-pMIeB7'
+        Building CXX object CMakeFiles/cmTC_22e84.dir/src.cxx.o
+        /usr/bin/clang++   -Dres_-Wformat -Wformat -MD -MT CMakeFiles/cmTC_22e84.dir/src.cxx.o -MF CMakeFiles/cmTC_22e84.dir/src.cxx.o.d -o CMakeFiles/cmTC_22e84.dir/src.cxx.o -c /home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-pMIeB7/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:13: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define res_-Wformat 1
+              |             ^
+        1 warning generated.
+        Linking CXX executable cmTC_22e84
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22e84.dir/link.txt --verbose=1
+        /usr/bin/clang++ CMakeFiles/cmTC_22e84.dir/src.cxx.o -o cmTC_22e84
+        gmake[1]: Leaving directory '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-pMIeB7'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "compiler.cmake:159 (check_cxx_compiler_flag)"
+      - "compiler.cmake:62 (CXX_FLAGS_BY_COMPILER_FRONTEND)"
+      - "post-project.cmake:90 (_SETUP_PROJECT_WARNINGS)"
+      - "CMakeLists.txt:17 (project)"
+    checks:
+      - "Performing Test res_-Wwrite-strings"
+    directories:
+      source: "/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-0e1hUo"
+      binary: "/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-0e1hUo"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      VCPKG_INSTALLED_DIR: "/home/ravi/spacewalk/kepler/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-linux"
+      Z_VCPKG_ROOT_DIR: "/home/ravi/spacewalk/kepler/vcpkg"
+    buildResult:
+      variable: "res_-Wwrite-strings"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-0e1hUo'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f7eaf/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f7eaf.dir/build.make CMakeFiles/cmTC_f7eaf.dir/build
+        gmake[1]: Entering directory '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-0e1hUo'
+        Building CXX object CMakeFiles/cmTC_f7eaf.dir/src.cxx.o
+        /usr/bin/clang++   -Dres_-Wwrite-strings -Wwrite-strings -MD -MT CMakeFiles/cmTC_f7eaf.dir/src.cxx.o -MF CMakeFiles/cmTC_f7eaf.dir/src.cxx.o.d -o CMakeFiles/cmTC_f7eaf.dir/src.cxx.o -c /home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-0e1hUo/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:13: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define res_-Wwrite-strings 1
+              |             ^
+        1 warning generated.
+        Linking CXX executable cmTC_f7eaf
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7eaf.dir/link.txt --verbose=1
+        /usr/bin/clang++ CMakeFiles/cmTC_f7eaf.dir/src.cxx.o -o cmTC_f7eaf
+        gmake[1]: Leaving directory '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-0e1hUo'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "compiler.cmake:159 (check_cxx_compiler_flag)"
+      - "compiler.cmake:62 (CXX_FLAGS_BY_COMPILER_FRONTEND)"
+      - "post-project.cmake:90 (_SETUP_PROJECT_WARNINGS)"
+      - "CMakeLists.txt:17 (project)"
+    checks:
+      - "Performing Test res_-Wconversion"
+    directories:
+      source: "/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-dPnzbX"
+      binary: "/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-dPnzbX"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      VCPKG_INSTALLED_DIR: "/home/ravi/spacewalk/kepler/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-linux"
+      Z_VCPKG_ROOT_DIR: "/home/ravi/spacewalk/kepler/vcpkg"
+    buildResult:
+      variable: "res_-Wconversion"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-dPnzbX'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5dd5d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5dd5d.dir/build.make CMakeFiles/cmTC_5dd5d.dir/build
+        gmake[1]: Entering directory '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-dPnzbX'
+        Building CXX object CMakeFiles/cmTC_5dd5d.dir/src.cxx.o
+        /usr/bin/clang++   -Dres_-Wconversion -Wconversion -MD -MT CMakeFiles/cmTC_5dd5d.dir/src.cxx.o -MF CMakeFiles/cmTC_5dd5d.dir/src.cxx.o.d -o CMakeFiles/cmTC_5dd5d.dir/src.cxx.o -c /home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-dPnzbX/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:13: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define res_-Wconversion 1
+              |             ^
+        1 warning generated.
+        Linking CXX executable cmTC_5dd5d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5dd5d.dir/link.txt --verbose=1
+        /usr/bin/clang++ CMakeFiles/cmTC_5dd5d.dir/src.cxx.o -o cmTC_5dd5d
+        gmake[1]: Leaving directory '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-dPnzbX'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "compiler.cmake:159 (check_cxx_compiler_flag)"
+      - "compiler.cmake:62 (CXX_FLAGS_BY_COMPILER_FRONTEND)"
+      - "post-project.cmake:90 (_SETUP_PROJECT_WARNINGS)"
+      - "CMakeLists.txt:17 (project)"
+    checks:
+      - "Performing Test res_-Werror"
+    directories:
+      source: "/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-UTbZVR"
+      binary: "/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-UTbZVR"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      VCPKG_INSTALLED_DIR: "/home/ravi/spacewalk/kepler/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-linux"
+      Z_VCPKG_ROOT_DIR: "/home/ravi/spacewalk/kepler/vcpkg"
+    buildResult:
+      variable: "res_-Werror"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-UTbZVR'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f6dad/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f6dad.dir/build.make CMakeFiles/cmTC_f6dad.dir/build
+        gmake[1]: Entering directory '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-UTbZVR'
+        Building CXX object CMakeFiles/cmTC_f6dad.dir/src.cxx.o
+        /usr/bin/clang++   -Dres_-Werror -Werror -MD -MT CMakeFiles/cmTC_f6dad.dir/src.cxx.o -MF CMakeFiles/cmTC_f6dad.dir/src.cxx.o.d -o CMakeFiles/cmTC_f6dad.dir/src.cxx.o -c /home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-UTbZVR/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:13: error: ISO C99 requires whitespace after the macro name [-Werror,-Wc99-extensions]
+            1 | #define res_-Werror 1
+              |             ^
+        1 error generated.
+        gmake[1]: *** [CMakeFiles/cmTC_f6dad.dir/build.make:82: CMakeFiles/cmTC_f6dad.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/ravi/spacewalk/kepler/jrl-cmakemodules/build/CMakeFiles/CMakeScratch/TryCompile-UTbZVR'
+        gmake: *** [Makefile:134: cmTC_f6dad/fast] Error 2
+        
+      exitCode: 2
+...
